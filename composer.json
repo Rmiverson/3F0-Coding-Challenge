@@ -1,0 +1,20 @@
+{
+    "name": "rmiverson/tfochallenge",
+    "description": "300FeetOut code challenge",
+    "minimum-stability": "beta",
+    "require": {
+        "php-http/guzzle6-adapter": "^2.0",
+        "willdurand/geocoder": "^4.2",
+        "geocoder-php/common-http": "^4.2",
+        "geocoder-php/plugin": "^1.1",
+        "puli/composer-plugin": "^1.0.0-beta10",
+        "php-http/curl-client": "^2.1",
+        "guzzlehttp/psr7": "^1.6",
+        "php-http/message": "^1.8",
+        "geocoder-php/google-maps-provider": "^4.4"
+        
+    },
+    "require-dev": {
+        "puli/cli": "^1.0@beta"
+    }
+}
