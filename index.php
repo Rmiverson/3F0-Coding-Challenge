@@ -21,6 +21,20 @@
             $coords = $results->first()->getCoordinates();
             $px = json_encode($coords->getLatitude());
             $py = json_encode($coords->getLongitude());
+
+            ?>
+            <script>
+              let map;
+              let px;
+              let py;
+              function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                  center: { lat: <?php echo $px; ?>, lng: <?php echo $py; ?>},
+                  zoom: 8
+                });
+              }
+            </script>
+            <?php
           }
         }
       ?>
@@ -29,15 +43,7 @@
       <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBzfCI-lJhHEipPBGzYmy4Mbk7mDkCBaA&callback=initMap&libraries=&v=weekly"></script>
-      <script>
-        let map;
-        function initMap() {
-          map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: <?php echo $px; ?>, lng: <?php echo $py; ?>},
-            zoom: 8
-          });
-        }
-      </script>
+
       <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
