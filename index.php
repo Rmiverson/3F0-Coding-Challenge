@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
       <?php
-        require '../testing/vendor/autoload.php';
+        require 'vendor/autoload.php';
         use Http\Adapter\Guzzle6\Client as GuzzleAdapter;
         use Geocoder\Query\GeocodeQuery;
         use Geocoder\Query\ReverseQuery;
