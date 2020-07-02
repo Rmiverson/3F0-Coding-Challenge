@@ -1,3 +1,4 @@
+/* styling for map when the modal displays */
 #map {
   display: flex;
   align-items: center;
@@ -6,6 +7,7 @@
   width: 100%;
 }
 
+/* styling for content including multiple text boxes */
 #body-content {
   display: flex;
   text-align: center;
@@ -14,6 +16,7 @@
   margin-bottom: 7em;
 }
 
+/* styling for form content */
 #form-content {
   display: flex;
   justify-content: center;
@@ -28,18 +31,21 @@
   background-color: #9098a6;
 }
 
+
 .sub-title {
   text-align: center;
 }
+
+/* individual content box styling */
 .content-box {
   margin-left: 2em;
   margin-right: 2em;
   padding-right: 2em;
   padding-left: 2em;
   background-color: #9098a6;
-  
 }
 
+/* styling for overall page */
 html,
 body {
   height: 100%;
@@ -48,6 +54,7 @@ body {
   background-color: #22324E;
 }
 
+/* styling for header, including bg image */
 header {
   display: flex;
   justify-content: center;

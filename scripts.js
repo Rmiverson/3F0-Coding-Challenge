@@ -1,3 +1,5 @@
+//scripting to display the modal for google map, credited to w3schools for code
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
