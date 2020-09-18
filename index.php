@@ -15,7 +15,7 @@
 
         // setting initial variables for geocoding the coordinates
         $adapter = new GuzzleAdapter();
-        $provider = new \Geocoder\Provider\GoogleMaps\GoogleMaps($adapter, null, 'AIzaSyCLq1iwqcH4A7juGiCvVHNeGlNOGllqDKI');
+        $provider = new \Geocoder\Provider\GoogleMaps\GoogleMaps($adapter, null, '');
         $geocoder = new \Geocoder\StatefulGeocoder($provider, 'en'); 
         
         
